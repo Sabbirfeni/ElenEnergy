@@ -1,0 +1,133 @@
+/*
+Common style start
+---------------------------*/
+
+/* Josefin Slab Semibold (font-family: 'Josefin Slab', serif;) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    padding: 0%;
+    margin:0%;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+}
+body {
+    color: #5B5B5B;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+}
+.fullHeight {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: clamp(1.9rem, 4vw, 3.4rem);
+}
+h3 {
+    font-size: clamp(1.2rem, 1.5vw, 1.9rem);
+}
+h4 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+p {
+    font-size: clamp(0.95rem, 4vw, 1.2rem);
+}
+.textColor {
+    color: #F3771D;
+}
+.backgroundColor {
+    background-color: #F3771D;
+}
+.backgroundColor__2 {
+    background-color: #F1E3D3;
+}
+.boldFont {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.semiBoldFont {
+    font-family: 'Josefin Slab', serif;
+}
+.button {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 7px 30px;
+  color: #ffffff;
+  background-color: #F3771D;
+  letter-spacing: 2px;
+  border: 1px solid #F3771D;
+  border-radius: 4px;
+  box-shadow: 0px 13px 42px -15px rgba(0,0,0,0.75);
+  transition: 0.3s;
+  font-family: 'Josefin Slab', serif;
+  text-transform: capitalize;
+}
+.button:hover {
+    color: #F3771D;
+    background-color: #f3761d00;
+    border: 1px solid #F3771D;
+    box-shadow: 0px 13px 42px -15px rgba(0,0,0,0);
+  }
+.btn-icon {
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.button:hover .btn-icon {
+    transform: translateX(10px);
+}
+.bigHeading {
+    font-size: clamp(2.9rem, 6vw, 5.7rem);
+}
+.heading {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.padding {
+    padding: 80px 0px;
+}
+.link {
+    position: relative; 
+    font-size: 20px;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #F3771D;
+    bottom: -15px;
+    right: 0%;
+    transition: 0.4s;
+}
+.link:hover::after {
+    width: 0%;
+  }
+.shortBorder {
+    width: 60px;
+    height: 3px;
+    background: #F3771D;
+    margin: 20px auto;
+}
+.lightGrayColor {
+    color: #929292;
+}
+/*
+Common style end
+---------------------------*/
