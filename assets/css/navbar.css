@@ -15,7 +15,8 @@ header {
     position: relative;
 }
 #navbar {
-    background-color: #151741;
+    background-color: #151741; 
+    /* background-image: linear-gradient(to bottom right, #28F19C, #02A2F9); */
     transition: 0.3s;
 }
 .logo-container {
