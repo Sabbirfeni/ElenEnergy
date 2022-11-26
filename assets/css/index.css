@@ -11,7 +11,8 @@
     font-family: 'Noto Sans', sans-serif;
 }
 body {
-    color: #0f0e0e;
+    background-color: #000;
+    color: #fff;
 }
 
 img {
@@ -31,7 +32,7 @@ a {
     justify-content: center;
 }
 h1 {
-    font-size: clamp(1.9rem, 4vw, 3.4rem);
+    font-size: clamp(2rem, 4vw, 3.6rem);
 }
 h3 {
     font-size: clamp(1.2rem, 1.5vw, 1.9rem);
@@ -127,7 +128,17 @@ p {
 .lightGrayColor {
     color: #929292;
 }
-
+section {
+    background-color: #000;
+    color: #fff;
+}
+.sectionHeading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
+    color: gold;
+}
 /* Common style end
 ---------------------------*/
 
@@ -141,23 +152,39 @@ p {
 
 /* Hero css start
 ------------------------------------*/
-
-.hero {
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%; 
+    min-height: 100%;
+    overflow: hidden;
+  }
+.heroText {
     width: 100%;
     height: 100vh;
-    background-image: url('../images/heroHomeImage.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom center;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
     text-align: center;
 }
-.hero::after {
+.hero {
+    /* background-image: url('../images/heroHomeImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center; */
+    position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+/* .hero::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -167,7 +194,7 @@ p {
     top: 0%;
     left: 0%;
     z-index: -1;
-}
+} */
 
     
  .hero h1, .hero h4, .hero h3 {
@@ -175,11 +202,54 @@ p {
     color: #fff;
 }
 .hero h1 {
-    font-size: clamp(2.2rem, 6vw, 6.6rem);
+    font-size: clamp(2.1rem, 6vw, 6.6rem);
 }
 .hero h4 {
     font-size: clamp(1.5rem, 4vw, 3rem);
 }
 .hero h3 {
     font-size: clamp(1rem, 3vw, 2rem);
+}
+
+
+
+
+/* Products section start
+------------------------------ */
+.product {
+    display: flex;
+}
+
+.product img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.productText h1 {
+    color: gold;
+}
+
+.lottieAnime {
+    width: 150px;
+    height: 150px;
+}
+
+@media only screen and (max-width: 992px) {
+    .product img {
+        height: 400px;
+    }
+    .lottieAnime {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .product img {
+        height: 230px;
+    }
+    .lottieAnime {
+        width: 80px;
+        height: 80px;
+    }
 }

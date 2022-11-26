@@ -18,8 +18,8 @@
             
             <div class="logo-container d-flex align-items-center">
                 <a href="index.html">
-                    Elen Energy
-                    <!-- <img class="logo" src="assets/images/logo-InfinityCollar-updated.png" alt=""> -->
+                    <!-- Elen Energy -->
+                    <img class="logo" src="assets/images/logo.jpeg" alt="">
                 </a>
             </div>
 
