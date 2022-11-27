@@ -1,14 +1,14 @@
 /*Common style start
 ---------------------------*/
 
-/* Josefin Slab Semibold (font-family: 'Josefin Slab', serif;) */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* 'Whisper' font  (font-family: 'Whisper', cursive;;) */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 * {
     padding: 0%;
     margin:0%;
     scroll-behavior: smooth;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Dancing Script', cursive; /* semibold */
 }
 body {
     background-color: #000;
@@ -41,7 +41,7 @@ h4 {
     font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 p {
-    font-size: clamp(0.95rem, 4vw, 1.2rem);
+    font-size: clamp(0.95rem, 4vw, 1.4rem);
 }
 .textColor {
     color: #F3771D;
@@ -52,13 +52,7 @@ p {
 .backgroundColor__2 {
     background-color: #F1E3D3;
 }
-.boldFont {
-    font-family: 'Josefin Sans', sans-serif;
-}
 
-.semiBoldFont {
-    font-family: 'Josefin Slab', serif;
-}
 .button {
   font-weight: bold;
   display: inline-block;
@@ -72,7 +66,7 @@ p {
   border-radius: 4px;
   box-shadow: 0px 13px 42px -15px rgba(0,0,0,0.75);
   transition: 0.3s;
-  font-family: 'Josefin Slab', serif;
+  /* font-family: 'Love Light', cursive; */
   text-transform: capitalize;
 }
 .button:hover {
@@ -80,7 +74,7 @@ p {
     background-color: #f3761d00;
     border: 1px solid #F3771D;
     box-shadow: 0px 13px 42px -15px rgba(0,0,0,0);
-  }
+}
 .btn-icon {
     width: 25px;
     height: auto;
@@ -129,7 +123,10 @@ p {
     color: #929292;
 }
 section {
-    background-color: #000;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
     color: #fff;
 }
 .sectionHeading {
@@ -197,7 +194,7 @@ section {
 } */
 
     
- .hero h1, .hero h4, .hero h3 {
+.hero h1, .hero h4, .hero h3 {
     margin: 0%;
     color: #fff;
 }
@@ -211,6 +208,34 @@ section {
     font-size: clamp(1rem, 3vw, 2rem);
 }
 
+
+
+
+
+/* Products section start
+------------------------------ */
+.about__us {
+    justify-content: center;
+    background-image: url('../images/aboutUs.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+    position: relative;
+    z-index: 2;
+}
+
+.about__us::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
 
 
 

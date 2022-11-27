@@ -31,13 +31,13 @@
           <div class="col-12"><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
 
           <div class='d-flex justify-content-center'>
-            <lottie-player src="https://lottie.host/2ca9ce3c-a451-44e3-952d-a3a57b93b63d/6s60wxGGGq.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+          <lottie-player src="https://lottie.host/590dcab2-22fa-42d9-8e34-5c0450352aa3/DrBPRxP2Bx.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
           </div>
 
           <!-- <iframe src="https://lottie.host/?file=2ca9ce3c-a451-44e3-952d-a3a57b93b63d/6s60wxGGGq.json"></iframe> -->
-            <h3>HERE WE ARE</h3>
-            <h1><b>GROW WITH ORGANIC </b></h1>
-            <h4>NUTRIENTS & INGREDIENTS</h4>
+            <h4>"All things, all of life, </h4>
+            <h1><b>All of creation  is part of one original thought."</b></h1>
+            <h4> - Ra</h4>
           </div>
         </div>
       </div>  
@@ -45,17 +45,48 @@
 
 
 
+    <!-- About us section start
+    --------------------------------- -->
+    <section class='about__us pt-2 pt-md-4 pb-2 pb-md-4'>
+      <div class="container">
+      <h1 class='sectionHeading'>About Us</h1>
+      <p class='text-center'>
+      <span class='text-warning'>"</span> We are those who are of the Law of One. 
+          In our vibration the polarities are harmonized, 
+          the complexities are simplified, and the paradoxes 
+          have their solution. We are one. That is our nature 
+          and our purpose.<span class='text-warning'>" - Ra</span>
+      </p>
+
+        <div class='row mt-2 mt-md-4'>
+          <div class="col-12 col-lg-6">
+            <img src="assets/images/cbd.png" alt="">
+          </div>
+          <div class="col-12 col-lg-6 mt-2 mt-md-0">
+            <div>
+              <p>
+              <span class='text-warning'>"</span>We, too, have our place. We are not those of the Love [density]
+               or of the Light [density]. 1 We are those who are of the Law 
+               of One. In our vibration the polarities are harmonized, 
+               the complexities are simplified, and the paradoxes have their 
+               solution. We are one. That is our nature and our purpose.<span class='text-warning'>" - Ra</span> 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Products section start
     --------------------------------- -->
-    <section class='pt-3 pt-md-5 product'>
+    <!-- <section class='pt-3 pt-md-5 product'>
       <div class="container">
         
         <h1 class='sectionHeading'>Our Products</h1>
         <p class='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum deserunt mollit anim id est laborum.</p>
         <div class='row mt-3 mt-md-5'>
           <div class='col-12 col-lg-6'>
-            
               <img src="assets/images/cbd.png" alt="">
           </div>
           <div class='col-12 col-lg-6 mt-3 mt-lg-0 productText'>
@@ -73,12 +104,7 @@
           </div>
         </div>
       </div>
-    </section>
-
-
-
-
-
+    </section> -->
 
 
 
