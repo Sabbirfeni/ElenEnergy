@@ -28,16 +28,15 @@
       </video>
       <div class="container heroText" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
-          <div class="col-12"><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+          <div class="col-12"> 
 
-          <div class='d-flex justify-content-center'>
+          <!-- <div class='d-flex justify-content-center'>
           <lottie-player src="https://lottie.host/590dcab2-22fa-42d9-8e34-5c0450352aa3/DrBPRxP2Bx.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
-          </div>
+          </div> -->
 
-          <!-- <iframe src="https://lottie.host/?file=2ca9ce3c-a451-44e3-952d-a3a57b93b63d/6s60wxGGGq.json"></iframe> -->
-            <h4>"All things, all of life, </h4>
-            <h1><b>All of creation  is part of one original thought."</b></h1>
-            <h4> - Ra</h4>
+            <h1>All things, all of life, <br>
+            <h1>All of creation  is part of one original thought.<br>
+            - Ra</h1>
           </div>
         </div>
       </div>  

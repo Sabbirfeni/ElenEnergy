@@ -1,14 +1,12 @@
 /*Common style start
 ---------------------------*/
 
-/* 'Whisper' font  (font-family: 'Whisper', cursive;;) */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-
 * {
     padding: 0%;
     margin:0%;
+    /* font-size: 60px; */
     scroll-behavior: smooth;
-    font-family: 'Dancing Script', cursive; /* semibold */
+    font-family: Akhenaton; src: url('https://www.mediafont.com/storage/contents/4408/font.eot'); /* IE */ src: local('Akhenaton'), url('https://www.mediafont.com/storage/contents/4408/AK______.TTF'); /* non-IE */
 }
 body {
     background-color: #000;
@@ -41,7 +39,8 @@ h4 {
     font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 p {
-    font-size: clamp(0.95rem, 4vw, 1.4rem);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    margin-bottom: 0;
 }
 .textColor {
     color: #F3771D;
@@ -84,9 +83,9 @@ p {
 .button:hover .btn-icon {
     transform: translateX(10px);
 }
-.bigHeading {
-    font-size: clamp(2.9rem, 6vw, 5.7rem);
-}
+/* .bigHeading {
+    font-size: clamp(9rem, 10vw, 8.7rem);
+} */
 .heading {
     margin-bottom: 50px;
     text-align: center;
@@ -124,16 +123,15 @@ p {
 }
 section {
     width: 100%;
-    min-height: 70vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
     color: #fff;
 }
 .sectionHeading {
     text-align: center;
-    margin-bottom: 10px;
-    font-size: clamp(2rem, 4vw, 4rem);
-    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: clamp(4rem, 8vw, 7rem);
     color: gold;
 }
 /* Common style end
@@ -199,7 +197,8 @@ section {
     color: #fff;
 }
 .hero h1 {
-    font-size: clamp(2.1rem, 6vw, 6.6rem);
+    font-size: clamp(4.5rem, 9vw, 9rem);
+    margin-bottom: -3rem;
 }
 .hero h4 {
     font-size: clamp(1.5rem, 4vw, 3rem);
@@ -260,6 +259,9 @@ section {
 }
 
 @media only screen and (max-width: 992px) {
+    .hero h1 {
+        margin-bottom: -2rem;
+    }
     .product img {
         height: 400px;
     }
@@ -270,6 +272,9 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
+    .hero h1 {
+        margin-bottom: 0rem;
+    }
     .product img {
         height: 230px;
     }
