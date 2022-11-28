@@ -36,7 +36,7 @@ h3 {
     font-size: clamp(1.2rem, 1.5vw, 1.9rem);
 }
 h4 {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: 6rem;
 }
 p {
     font-size: clamp(2rem, 5vw, 2.8rem);
@@ -57,11 +57,11 @@ p {
   display: inline-block;
   font-size: 18px;
   margin-top: 10px;
-  padding: 7px 30px;
-  color: #ffffff;
-  background-color: #F3771D;
+  padding: 4px 20px;
+  color: gold;
+  background-color: #ffffff00;
   letter-spacing: 2px;
-  border: 1px solid #F3771D;
+  border: 1px solid gold;
   border-radius: 4px;
   box-shadow: 0px 13px 42px -15px rgba(0,0,0,0.75);
   transition: 0.3s;
@@ -69,9 +69,9 @@ p {
   text-transform: capitalize;
 }
 .button:hover {
-    color: #F3771D;
+    color: gold;
     background-color: #f3761d00;
-    border: 1px solid #F3771D;
+    border: 1px solid gold;
     box-shadow: 0px 13px 42px -15px rgba(0,0,0,0);
 }
 .btn-icon {
@@ -123,10 +123,29 @@ p {
 }
 section {
     width: 100%;
-    min-height: 40vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #fff;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    position: relative;
+    z-index: 2;
+}
+.section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
 }
 .sectionHeading {
     text-align: center;
@@ -211,17 +230,10 @@ section {
 
 
 
-/* Products section start
+/* About Us section start
 ------------------------------ */
 .about__us {
-    justify-content: center;
-    background-image: url('../images/aboutUs.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom center;
-    position: relative;
-    z-index: 2;
+    background-image: url('../images/aboutUs.jpeg');
 }
 
 .about__us::after {
@@ -238,32 +250,113 @@ section {
 
 
 
+
+
+
 /* Products section start
 ------------------------------ */
 .product {
-    display: flex;
+    background-image: url('../images/product-background.png');
+}
+.about__us::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+.product-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    /* background-color: #fcbb30; */
+    /* padding: 20px; */
+}
+.product-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: #151741c0;
+    opacity: 0.7;
+    transition: 0.4s;
+    top: 0%;
+    left: 0%;
+}
+.product-container:hover::after {
+    height: 100%;
 }
 
-.product img {
-    height: 500px;
+.product-container img {
+    height: 350px;
     object-fit: cover;
+    transition: 0.3s;
 }
-
-.productText h1 {
+.product-text {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    padding: 20px 30px;
+    color: white;
+    z-index: 2;
+}
+.product-text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #0000009c , #ffff0000);
+    top: 0%;
+    left: 0%;
+    z-index: -2;
+}
+.product-text h4 {
+    text-shadow: 9px 9px 10px 5px #020202;
+    font-size: clamp(3rem, 5vw, 3.5rem);
+    /* font-size: 55px; */
     color: gold;
+    z-index: 55;
+    z-index: 2000;
+}
+.product-container button {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.product-text span {
+    opacity: 0;
+    transition: 0.3s;
+    font-size: clamp(2rem, 4vw, 2.3rem);
+}
+.product-container:hover .product-text span {
+    opacity: 1;
+}
+.product-container:hover img {
+    transform: scale(1.2);
+}
+.more-product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.lottieAnime {
-    width: 150px;
-    height: 150px;
-}
+
 
 @media only screen and (max-width: 992px) {
     .hero h1 {
         margin-bottom: -2rem;
     }
-    .product img {
-        height: 400px;
+    .product-container img {
+        height: 280px;
     }
     .lottieAnime {
         width: 120px;
@@ -275,11 +368,12 @@ section {
     .hero h1 {
         margin-bottom: 0rem;
     }
-    .product img {
-        height: 230px;
-    }
     .lottieAnime {
         width: 80px;
         height: 80px;
+    }
+    .product-container img {
+        height: 240px;
+        object-fit: cover;
     }
 }
