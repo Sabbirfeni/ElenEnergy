@@ -62,7 +62,7 @@ header {
 }
 
 .nav-item-container ul li a {
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
     padding: 15px 15px;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 #F3771D;
@@ -130,7 +130,7 @@ side-panel css Start
   .side-panel ul li a {
     padding: 3px 8px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 20px;
     color: #fff;
     display: block;
     transition: 0.3s;

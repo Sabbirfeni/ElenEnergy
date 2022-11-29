@@ -1,16 +1,17 @@
 /*Common style start
 ---------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
 * {
     padding: 0%;
     margin:0%;
     /* font-size: 60px; */
     scroll-behavior: smooth;
-    font-family: Akhenaton; src: url('https://www.mediafont.com/storage/contents/4408/font.eot'); /* IE */ src: local('Akhenaton'), url('https://www.mediafont.com/storage/contents/4408/AK______.TTF'); /* non-IE */
+    font-family: 'Cormorant SC', serif;
 }
+
 body {
     background-color: #000;
-    color: #fff;
+    color: gold;
 }
 
 img {
@@ -30,20 +31,20 @@ a {
     justify-content: center;
 }
 h1 {
-    font-size: clamp(2rem, 4vw, 3.6rem);
+    font-size: clamp(0.9rem, 4vw, 1.3rem);
 }
 h3 {
     font-size: clamp(1.2rem, 1.5vw, 1.9rem);
 }
 h4 {
-    font-size: 6rem;
+    font-size: clamp(0.3rem, 1.5vw, 1rem);
 }
 p {
-    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-size: clamp(0.7rem, 4vw, 1.3rem);
     margin-bottom: 0;
 }
 .textColor {
-    color: #F3771D;
+    color: gold;
 }
 .backgroundColor {
     background-color: #F3771D;
@@ -55,7 +56,8 @@ p {
 .button {
   font-weight: bold;
   display: inline-block;
-  font-size: 18px;
+  text-align: center;
+  font-size: 16px;
   margin-top: 10px;
   padding: 4px 20px;
   color: gold;
@@ -63,16 +65,16 @@ p {
   letter-spacing: 2px;
   border: 1px solid gold;
   border-radius: 4px;
-  box-shadow: 0px 13px 42px -15px rgba(0,0,0,0.75);
+  box-shadow: 0px 13px 42px -15px #000000bf;
   transition: 0.3s;
   /* font-family: 'Love Light', cursive; */
   text-transform: capitalize;
 }
 .button:hover {
-    color: gold;
-    background-color: #f3761d00;
-    border: 1px solid gold;
-    box-shadow: 0px 13px 42px -15px rgba(0,0,0,0);
+    color: #ffffff;
+    background-color: #d1b308;
+    border: 1px solid #d1b308;
+    box-shadow: 0px 13px 42px -15px #00000000;
 }
 .btn-icon {
     width: 25px;
@@ -83,14 +85,14 @@ p {
 .button:hover .btn-icon {
     transform: translateX(10px);
 }
-/* .bigHeading {
-    font-size: clamp(9rem, 10vw, 8.7rem);
-} */
-.heading {
+.bigHeading {
+    font-size: clamp(2.1rem, 5vw, 4.8rem);
+}
+/* .heading {
     margin-bottom: 50px;
     text-align: center;
     font-weight: bold;
-}
+} */
 .padding {
     padding: 80px 0px;
 }
@@ -127,7 +129,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
     background-color: #000;
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,7 +151,7 @@ section {
 .sectionHeading {
     text-align: center;
     margin-bottom: 5px;
-    font-size: clamp(4rem, 8vw, 7rem);
+    font-size: clamp(2.1rem, 5vw, 3.5rem);
     color: gold;
 }
 /* Common style end
@@ -193,7 +194,6 @@ section {
     position: relative;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
     width: 100%;
     padding: 20px;
     overflow: hidden;
@@ -210,22 +210,6 @@ section {
     z-index: -1;
 } */
 
-    
-.hero h1, .hero h4, .hero h3 {
-    margin: 0%;
-    color: #fff;
-}
-.hero h1 {
-    font-size: clamp(4.5rem, 9vw, 9rem);
-    margin-bottom: -3rem;
-}
-.hero h4 {
-    font-size: clamp(1.5rem, 4vw, 3rem);
-}
-.hero h3 {
-    font-size: clamp(1rem, 3vw, 2rem);
-}
-
 
 
 
@@ -234,6 +218,7 @@ section {
 ------------------------------ */
 .about__us {
     background-image: url('../images/aboutUs.jpeg');
+    color: white;
 }
 
 .about__us::after {
@@ -258,7 +243,7 @@ section {
 .product {
     background-image: url('../images/product-background.png');
 }
-.about__us::after {
+.product::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -273,7 +258,6 @@ section {
     width: 100%;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
     border-radius: 10px;
     /* background-color: #fcbb30; */
     /* padding: 20px; */
@@ -300,6 +284,7 @@ section {
 }
 .product-text {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0%;
     padding: 20px 30px;
@@ -311,37 +296,45 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #0000009c , #ffff0000);
+    background-image: linear-gradient( #0000009c , #ffff0000, #000000d8);
     top: 0%;
     left: 0%;
     z-index: -2;
 }
 .product-text h4 {
+    text-align: center;
     text-shadow: 9px 9px 10px 5px #020202;
-    font-size: clamp(3rem, 5vw, 3.5rem);
-    /* font-size: 55px; */
     color: gold;
-    z-index: 55;
     z-index: 2000;
 }
-.product-container button {
+.buttonContainer {
+    width: 60%;
+    display: blocks;
+    justify-content: center;
     position: fixed;
-    bottom: 10px;
-    right: 20px;
-    opacity: 0;
+    bottom: -3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
     transition: 0.3s;
 }
-.product-text span {
+.buttonContainer a {
+    width: 100%;
+    text-decoration: none;
+    margin: 3px;
+}
+/* .product-text p {
     opacity: 0;
     transition: 0.3s;
     font-size: clamp(2rem, 4vw, 2.3rem);
 }
-.product-container:hover .product-text span {
+.product-container:hover .product-text p {
     opacity: 1;
-}
+} */
 .product-container:hover img {
     transform: scale(1.2);
 }
+
 .more-product {
     position: absolute;
     top: 50%;

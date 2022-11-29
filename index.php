@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href='assets/images/favicon.png'>
+    <link rel="shortcut icon" type="image/png" href='assets/images/logo.jpeg'>
     <title>Elen Energy</title>
     
-    
+  
     <!-- On Scroll animation link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -34,8 +34,8 @@
           <lottie-player src="https://lottie.host/590dcab2-22fa-42d9-8e34-5c0450352aa3/DrBPRxP2Bx.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
           </div> -->
 
-            <h1>All things, all of life, <br>
-            <h1>All of creation  is part of one original thought.<br>
+            <h1 class='bigHeading textColor'>All things, all of life, <br>
+            All of creation  is part of one original thought.<br>
             - Ra</h1>
           </div>
         </div>
@@ -46,14 +46,13 @@
 
     <!-- About us section start
     --------------------------------- -->
-    <section class='about__us pt-2 pt-md-4 pb-2 pb-md-4'>
+    <section class='about__us'>
       <div class="container">
-        <div class='row'>
+        <div class='row' data-aos="fade-up" data-aos-duration="1000">
           <div class="col-12 text-center">
                 <h1 class='sectionHeading'>About Us</h1>
-                <p>
-                <span class='text-warning'>"</span>We, too, have our place. We are not those of the Love [density]
-                or of the Light [density]. 1 We are those who are of the Law 
+                <p class='textColor'>
+                <span class='text-warning'>"</span>We are those who are of the Law 
                 of One. In our vibration the polarities are harmonized, 
                 the complexities are simplified, and the paradoxes have their 
                 solution. We are one. That is our nature and our purpose.<span class='text-warning'>" - Ra</span> 
@@ -67,7 +66,7 @@
 
     <!-- Products section start
     --------------------------------- -->
-    <section class="product section pb-2 pb-md-4 pt-2">
+    <section class="product section pb-2 pb-md-4 pt-2 pt-md-4">
 
       <div class="container">
         <div class="row justify-content-center">
@@ -75,41 +74,57 @@
             <h4 class='sectionHeading'>Our Products</h4>
             
           </div>
-          <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
               <img src="assets/images/seamose.jpeg" alt="">
               <div class="product-text">
-                <h4>Seamoss </h4>
-                <span>sample text</span>
-                
+                <h4>Seamoss Products</h4>
+                <div class='buttonContainer'>
+                  <a href='#' class='button'>Seamoss Gel</a>
+                  <a href='#' class='button'>bladderwrack</a>
+                </div>
+               
               </div>
             </div>
-          </a>
-          <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
               <img src="assets/images/mushrooms.jpeg" alt="">
               <div class="product-text">
-                <h4>Mushrooms</h4>
-                <span>sample text</span>
+                <h4>Mushrooms Products</h4>
+                <div class='buttonContainer'>
+                  <a href='#' class='button'>Capsules</a>
+                  <a href='#' class='button'>Teabags</a>
+                </div>
               </div>
             </div>
-          </a>
+          </div>
           <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
               <img src="assets/images/crystals.jpeg" alt="">
               <div class="product-text">
-                <h4>Crystals</h4>
-                <span>Sentient PLASMA Crystals™ are somewhat of a mystery. It is claimed that ...</span>
+                <h4>Sentient Plasma Crystals</h4>
                 
               </div>
             </div>
           </a>
+          <div href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
+            <div class="product-container">
+              <img src="assets/images/terotDrek.jpeg" alt="">
+              <div class="product-text">
+                <h4>Tarot Decks</h4>
+                <div class='buttonContainer'>
+                  <a href='#' class='button'>Reishi</a>
+                  <a href='#' class='button'>lion's mane</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
               <img src="assets/images/cbd.jpeg" alt="">
               <div class="product-text">
                 <h4>CBD</h4>
-                <span>What's different about our full spectrum cbds...We use whole hemp plant product as well as...</span>
                 
               </div>
             </div>
@@ -117,10 +132,19 @@
          
           <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
+              <img src="assets/images/whereElenBook.jpeg" alt="">
+              <div class="product-text">
+                <h4>Where's Elán? Book Series</h4>
+                
+              </div>
+            </div>
+          </a>
+
+          <!-- <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
+            <div class="product-container">
               <img src="assets/images/bookSeries.jpeg" alt="">
               <div class="product-text">
                 <h4>Book series</h4>
-                <span>Sample text</span>
                 
               </div>
             </div>
@@ -131,7 +155,6 @@
               <img src="assets/images/bookSeries.jpeg" alt="">
               <div class="product-text">
                 <h4>Book series</h4>
-                <span>Sample text</span>
                 
               </div>
             </div>
@@ -142,7 +165,6 @@
               <img src="assets/images/bookSeries.jpeg" alt="">
               <div class="product-text">
                 <h4>Book series</h4>
-                <span>Sample text</span>
                 
               </div>
             </div>
@@ -153,7 +175,6 @@
               <img src="assets/images/bookSeries.jpeg" alt="">
               <div class="product-text">
                 <h4>Book series</h4>
-                <span>Sample text</span>
                 
               </div>
             </div>
@@ -164,22 +185,10 @@
               <img src="assets/images/bookSeries.jpeg" alt="">
               <div class="product-text">
                 <h4>Book series</h4>
-                <span>Sample text</span>
                 
               </div>
             </div>
-          </a>
-
-          <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
-            <div class="product-container">
-              <img src="assets/images/bookSeries.jpeg" alt="">
-              <div class="product-text">
-                <h4>Book series</h4>
-                <span>Sample text</span>
-                
-              </div>
-            </div>
-          </a>
+          </a> -->
 
           <!-- <a href="services.html" class="col-12 col-md-6 col-lg-4 col-xl-3  mt-md-4 mt-2 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="800">
             <div class="service-container">
