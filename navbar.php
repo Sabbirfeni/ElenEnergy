@@ -17,9 +17,10 @@
         <nav id="navbar" class="header-area shadow">
             
             <div class="logo-container d-flex align-items-center">
-                <a href="index.html">
+                <a href="index.html" style='text-decoration: none;'>
                     <!-- Elen Energy -->
                     <img class="logo" src="assets/images/logo.jpeg" alt="">
+                    Elán Energy
                 </a>
             </div>
 
