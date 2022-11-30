@@ -46,7 +46,7 @@
 
     <!-- About us section start
     --------------------------------- -->
-    <section class='about__us'>
+    <section class='about__us' id='aboutUs'>
       <div class="container">
         <div class='row' data-aos="fade-up" data-aos-duration="1000">
           <div class="col-12 text-center">
@@ -66,7 +66,7 @@
 
     <!-- Products section start
     --------------------------------- -->
-    <section class="product section pb-2 pb-md-4 pt-2 pt-md-4">
+    <section class="product section pb-2 pb-md-4 pt-2 pt-md-4" id='products'>
 
       <div class="container">
         <div class="row justify-content-center">
@@ -83,8 +83,8 @@
                   <a href='#' class='button'>Seamoss Gel</a>
                   <a href='#' class='button'>capsules</a>
                   <!--  when you click on it the description is Seamoss/Bladderwrack/Burdock Root Capsules -->
-                  <a href='#' class='button'>Raw</a>
-                  <!-- When you click on Raw Seamoss there should be 2 options which are Seamoss and Bladderwrack -->
+                  <a href='#' class='button'>Dried</a>
+                  <!-- When you click on Dried Seamoss there should be 2 options which are Seamoss and Bladderwrack -->
                 </div>
                
               </div>
@@ -98,8 +98,8 @@
                 <div class='buttonContainer'>
                   <a href='#' class='button'>Capsules</a>
                   <a href='#' class='button'>Teabags</a>
-                  <a href='#' class='button'>Raw</a>
-                  <!-- When you click on raw mushrooms there should be 3 options which are Chaga, Turkey Tail, and Reishi -->
+                  <a href='#' class='button'>Dried</a>
+                  <!-- When you click on Dried mushrooms there should be 3 options which are Chaga, Turkey Tail, and Reishi -->
                 </div>
               </div>
             </div>
@@ -126,25 +126,29 @@
               </div>
             </div>
           </div>
-          <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
+          <divs href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
               <img src="assets/images/cbd.jpeg" alt="">
               <div class="product-text">
                 <h4>CBD</h4>
-                
+                <div class='buttonContainer'>
+                  <a href='#' class='button'>Buy Now</a>
+                </div>
               </div>
             </div>
-          </a>
+          </divs>
          
-          <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
+          <div href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
               <img src="assets/images/whereElenBook.jpeg" alt="">
               <div class="product-text">
                 <h4>Where's Elán? Book Series</h4>
-                
+                <div class='buttonContainer'>
+                  <a href='#' class='button'>Buy Now</a>
+                </div>
               </div>
             </div>
-          </a>
+          </div>
 
           <!-- <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
@@ -209,9 +213,42 @@
 
     </section>
 
-
+    <!-- Whatsapp chat -->
     <script>
-  
+      var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?30580';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+        "enabled":true,
+        "chatButtonSetting":{
+          "backgroundColor":"#4dc247",
+          "ctaText":"",
+          "borderRadius":"25",
+          "marginLeft":"0",
+          "marginBottom":"20",
+          "marginLeft":"20",
+          "position":"left"
+        },
+        "brandSetting":{
+          "brandName":"Elen Energy",
+          "brandSubTitle":"Typically replies within a day",
+          "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+          "welcomeText":"Hi there!\nHow can I help you?",
+          "messageText":"",
+          "backgroundColor":"#0a5f54",
+          "ctaText":"Start Chat",
+          "borderRadius":"25",
+          "autoShow":false,
+          "phoneNumber":"2075773304"
+        }
+      };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
     </script>
 
 

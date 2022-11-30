@@ -17,7 +17,7 @@
         <nav id="navbar" class="header-area shadow">
             
             <div class="logo-container d-flex align-items-center">
-                <a href="index.html" style='text-decoration: none;'>
+                <a href="index.php" style='text-decoration: none;'>
                     <!-- Elen Energy -->
                     <img class="logo" src="assets/images/logo.jpeg" alt="">
                     Elán Energy
@@ -26,9 +26,9 @@
 
             <div class="nav-item-container">
                 <ul class="nav-items-ul">
-                    <li><a href="explore.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php#aboutUs">About Us</a></li>
+                    <li><a href="index.php#products">All Products</a></li>
                    </ul>
                    <!-- <a href="shop.html" class="nav_button " >Shop</a> -->
                 <button class="open-btn" onclick="openNav()">☰</button>
@@ -42,9 +42,10 @@
 
                 <a href="javascript:void(0)" class="close-btn semiBoldFont" onclick="closeNav()"><img src="assets/images/right-arrow.png" alt="" style="width: 20px; height: 20px;"></a>
                 <ul>
-                    <li><a href="explore.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php#aboutUs">About Us</a></li>
+                    <li><a href="index.php#products">All Products</a></li>
+                   
                 </ul>
 
                 <!-- <a href="index.html"><img src="assets/images/shopping-cart.png" alt="" style="width: 25px;"></a>

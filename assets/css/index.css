@@ -143,7 +143,7 @@ section {
     width: 100%;
     height: 100%;
     background-color: #000000;
-    opacity: 0.6;
+    opacity: 0.3;
     top: 0%;
     left: 0%;
     z-index: -1;
@@ -243,17 +243,6 @@ section {
 .product {
     background-image: url('../images/productBackground.jpeg');
 }
-.product::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.6;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-}
 .product-container {
     width: 100%;
     overflow: hidden;
@@ -285,6 +274,9 @@ section {
 .product-text {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 0%;
     padding: 20px 30px;
@@ -312,9 +304,10 @@ section {
     display: block;
     justify-content: center;
     position: fixed;
-    bottom: 3%;
+    bottom: 30px;
+    /* bottom: 3%;
     left: 50%;
-    transform: translate(-50%, -20px);
+    transform: translate(-50%, 3%); */
     opacity: 1;
     transition: 0.3s;
 }
