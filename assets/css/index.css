@@ -309,10 +309,10 @@ section {
 }
 .buttonContainer {
     width: 60%;
-    display: blocks;
+    display: block;
     justify-content: center;
     position: fixed;
-    bottom: 20px;
+    bottom: 3%;
     left: 50%;
     transform: translate(-50%, -20px);
     opacity: 1;
