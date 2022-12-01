@@ -19,10 +19,10 @@
     <section class='newLetter pb-3'>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="800">
                     <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_dyXaL5.json"  background="transparent"  speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>
                 </div>
-                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="800">
                     <div class="card" style='background-color: gold'>
                         <h3>Don't Leave Your 15% OFF Behind</h3>
                         <h5>Subscribe to our email list and SAVE 15% on your next order</h5>
