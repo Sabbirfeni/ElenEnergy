@@ -94,7 +94,7 @@
             <div class="product-container">
               <img src="assets/images/mushrooms.jpeg" alt="">
               <div class="product-text">
-                <h4>Mushrooms Products</h4>
+                <h4>Mushroom Products</h4>
                 <div class='buttonContainer'>
                   <a href='#' class='button'>Capsules</a>
                   <a href='#' class='button'>Teabags</a>
@@ -213,6 +213,21 @@
 
     </section>
 
+
+
+    <!-- Newsletter section start 
+    ------------------------- -->
+    <?php require 'newsLetter.php'?>
+
+
+    <!-- Footer start 
+    --------------------------- -->
+    <?php require 'footer.php'?>
+
+
+
+
+
     <!-- Whatsapp chat -->
     <script>
       var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?30580';
@@ -241,7 +256,7 @@
           "ctaText":"Start Chat",
           "borderRadius":"25",
           "autoShow":false,
-          "phoneNumber":"2075773304"
+          "phoneNumber":"12075773304"
         }
       };
       s.onload = function() {
