@@ -40,7 +40,7 @@
 
 .inputbox input {
     position:absolute;
-    width: 300px;
+    width: 100%;
     background:transparent;
     border-color: #000000;
 }

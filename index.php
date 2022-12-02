@@ -76,11 +76,11 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
-              <img src="assets/images/seamose.jpeg" alt="">
+              <img src="assets/images/seamoss-1.jpeg" alt="">
               <div class="product-text">
                 <h4>Seamoss Products</h4>
                 <div class='buttonContainer'>
-                  <a href='#' class='button'>Seamoss Gel</a>
+                  <a href='products.php' class='button'>Seamoss Gel</a>
                   <a href='#' class='button'>capsules</a>
                   <!--  when you click on it the description is Seamoss/Bladderwrack/Burdock Root Capsules -->
                   <a href='#' class='button'>Dried</a>
