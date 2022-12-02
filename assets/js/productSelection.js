@@ -35,6 +35,7 @@ allPackage.forEach((value) => {
 
 document.querySelector('.cancelBtn').addEventListener('click', () => {
     orderForm.classList.remove('active');
+    document.body.style.overflowY = 'auto';
 })
 
 
