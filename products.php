@@ -23,7 +23,10 @@
     
     <!-- Products section start 
     ----------------------------->
-    <section class='productDetails' style='background-image: url("assets/images/seamoss-3.jpeg")'>
+    <div class="sectionContainer">
+
+    </div>
+    <!-- <section class='productDetails' style='background-image: url("assets/images/seamoss-3.jpeg")'>
         <div class="container pb-3 pb-md-5">
             <div class="row p-3 p-md-0">
                 <div class="col-lg-6 p-0">
@@ -76,7 +79,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <div class="orderForm">
         <div>

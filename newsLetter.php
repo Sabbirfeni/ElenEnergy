@@ -27,15 +27,15 @@
                         <h3>Don't Leave Your 15% OFF Behind</h3>
                         <h5>Subscribe to our email list and SAVE 15% on your next order</h5>
                         <form onclick="return false;"> 
-                            <div class="inputbox"> 
-                                <input type="text" name="name" class="form-control" required="required"> 
+                            <div class="form-group"> 
                                 <span>Full Name</span> 
+                                <input type="text" name="name" class="form-control w-100" required="required"> 
                             </div> 
-                            <div class="inputbox"> 
-                                <input type="text" name="name" class="form-control" required="required"> 
+                            <div class="form-group"> 
                                 <span>Email</span> 
+                                <input type="text" name="name" class="form-control" required="required"> 
                             </div>
-                            <button class="btn btn-block">Send</button> 
+                            <button class="btn btn-block mt-2">Send</button> 
                         </form> 
                     </div>
                 </div>
