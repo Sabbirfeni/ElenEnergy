@@ -19,7 +19,28 @@ const ALL_PRODUCTS = [
             }
         ],
         backgroundImageLink: 'seamoss-3.jpeg'
-    }
+    },
+    {
+        name: 'sea-moss-capsules',
+        sliderImagesLink: ['sea-moss-capsuls-1.jpeg', 'sea-moss-capsuls-2.jpeg', 'sea-moss-capsuls-3.jpeg'],
+        title: 'Sea Moss Capsules',
+        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One Scoop'],
+        packages: [
+            {
+                quantity: '8oz',
+                price: '35.99'
+            },
+            {
+                quantity: '16oz',
+                price: '47.99'
+            },
+            {
+                quantity: '32oz',
+                price: '57.99'
+            }
+        ],
+        backgroundImageLink: 'sea-moss-capsuls-1.jpeg'
+    },
 ]
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -49,18 +70,14 @@ document.querySelector('.sectionContainer').innerHTML = `
             <div class="col-lg-6" style='background-color: gold;'>
                 <div class='p-3 p-md-4'>
                     <h1>Sea Moss Gel</h1>
-                    <ul>
-                        <li><p>100% Natural & Organic</p></li>
-                        <li><p>Gut Health & Digestion </p></li>
-                        <li><p>Support Thyroid & Boost Your Energy</p></li>
-                        <li><p>24 Hour Customer Support</p></li>
-                        <li><p>92 Minerals In One Scoop</p></li>
+                    <ul class='product_qualities-container'>
+                        
                     </ul>
                     
                     <div class='measure'>
-                        <p class='package' value='35.99'>8oz - $<span>35.99</span></p>
-                        <p class='package' value='47.99'>16oz - $<span>47.99</span></p>
-                        <p class='package' value='57.99'>32oz - $<span>57.99</span></p>
+                        <p class='package'>8oz - $<span>35.99</span></p>
+                        <p class='package'>16oz - $<span>47.99</span></p>
+                        <p class='package'>32oz - $<span>57.99</span></p>
                     </div>
                     <p>Spend Over $49.99 & Get One Jar At 50% Off! + Free Shipping When You Spend Over $100! 📦</p>
                     <div class='d-flex justify-content-end'>
@@ -80,9 +97,15 @@ productResult.sliderImagesLink.forEach((link) => {
     let html = `<div class="carousel-item">
         <img src="assets/images/${link}" class="d-block" alt="...">
     </div>`
-    document.querySelector('.carousel-inner').insertAdjacentHTML('beforeend', html);;
+    document.querySelector('.carousel-inner').insertAdjacentHTML('beforeend', html);
 })
 document.querySelector('.carousel-item').classList.add('active')
+
+productResult.product_qualities.forEach((quality) => {
+    let html = `<li><p>${quality}</p></li>`
+    document.querySelector('.product_qualities-container').insertAdjacentHTML('beforeend', html);
+})
+
 
 {/* <section class='productDetails' style='background-image: url("assets/images/seamoss-3.jpeg")'>
 <div class="container pb-3 pb-md-5">

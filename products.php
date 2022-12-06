@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php require 'favicon.php'?>
-    <title>Elen Energy</title>
+    <title>Elán Energy</title>
 
     <!-- Lottie animation -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -24,8 +24,6 @@
     <!-- Products section start 
     ----------------------------->
     <div class="sectionContainer">
-
-    </div>
     <!-- <section class='productDetails' style='background-image: url("assets/images/seamoss-3.jpeg")'>
         <div class="container pb-3 pb-md-5">
             <div class="row p-3 p-md-0">
@@ -80,34 +78,24 @@
             </div>
         </div>
     </section> -->
+    </div>
+
 
     <div class="orderForm">
         <div>
-            <form class='form'>
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Full Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="package">Package</label>
-                    <input type="text" class="form-control" id="package" placeholder="package">
-                </div>
-                <div class="form-group">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" class="form-control" id="quantity" placeholder="number">
-                </div>
-                <div class='d-flex justify-content-end'>
-                    <button type="submit" class="btn btn-primary">Confirm</button>
-                </div>
-                
-                <div class="cancelBtn">
-                    <span>X</span>
-                </div>
-            </form>
+            
+            <form>
+                <span class='cancelBtn'>X</span>
+                <label for="fname">Full Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Email:</label><br>
+                <input type="email" id="lname" name="lname"><br>
+                <label for="fname">Package:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="fname">Quantity:</label><br>
+                <input type="number" id="fname" name="fname"><br><br>
+                <input type="submit" value="Submit">
+            </form> 
 
            
         </div>
@@ -125,9 +113,47 @@
 
 
 
-    <script src="assets/js/productSelection.js" type="text/javascript" defer></script>
+       <!-- Whatsapp chat -->
+       <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?30580';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled":true,
+            "chatButtonSetting":{
+            "backgroundColor":"#4dc247",
+            "ctaText":"",
+            "borderRadius":"25",
+            "marginLeft":"0",
+            "marginBottom":"20",
+            "marginLeft":"20",
+            "position":"left"
+            },
+            "brandSetting":{
+            "brandName":"Elán Energy",
+            "brandSubTitle":"Typically replies within a day",
+            "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+            "welcomeText":"Hi there!\nHow can I help you?",
+            "messageText":"",
+            "backgroundColor":"#0a5f54",
+            "ctaText":"Start Chat",
+            "borderRadius":"25",
+            "autoShow":false,
+            "phoneNumber":"12075773304"
+            }
+        };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+    <script src="assets/js/productSelection.js" type="text/javascript" defer></script>
+</body>
 </html>
     
     

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Elen Energy</title>
+    <title>Elán Energy</title>
 
     <!-- Lottie animation -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -26,17 +26,18 @@
                     <div class="card" style='background-color: gold'>
                         <h3>Don't Leave Your 15% OFF Behind</h3>
                         <h5>Subscribe to our email list and SAVE 15% on your next order</h5>
-                        <form onclick="return false;"> 
-                            <div class="form-group"> 
-                                <span>Full Name</span> 
-                                <input type="text" name="name" class="form-control w-100" required="required"> 
-                            </div> 
-                            <div class="form-group"> 
-                                <span>Email</span> 
-                                <input type="text" name="name" class="form-control" required="required"> 
+                        <form class='w-100'>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Full Name</label>
+                                <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                               
                             </div>
-                            <button class="btn btn-block mt-2">Send</button> 
-                        </form> 
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Email</label>
+                                <input type="password" class="form-control  w-75" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
                 

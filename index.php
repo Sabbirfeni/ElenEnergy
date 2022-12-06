@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php require 'favicon.php'?>
-    <title>Elen Energy</title>
+    <title>Elán Energy</title>
     
   
     <!-- On Scroll animation link -->
@@ -81,7 +81,7 @@
                 <h4>Seamoss Products</h4>
                 <div class='buttonContainer'>
                   <a href='products.php?productName=seamoss-gel' class='button'>Seamoss Gel</a>
-                  <a href='products.php' class='button'>capsules</a>
+                  <a href='products.php?productName=sea-moss-capsules' class='button'>capsules</a>
                   <!--  when you click on it the description is Seamoss/Bladderwrack/Burdock Root Capsules -->
                   <a href='#' class='button'>Dried</a>
                   <!-- When you click on Dried Seamoss there should be 2 options which are Seamoss and Bladderwrack -->
@@ -247,7 +247,7 @@
           "position":"left"
         },
         "brandSetting":{
-          "brandName":"Elen Energy",
+          "brandName":"Elán Energy",
           "brandSubTitle":"Typically replies within a day",
           "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
           "welcomeText":"Hi there!\nHow can I help you?",
