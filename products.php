@@ -60,14 +60,19 @@
                             <li><p>24 Hour Customer Support</p></li>
                             <li><p>92 Minerals In One Scoop</p></li>
                         </ul>
-                        
                         <div class='measure'>
                             <p class='package' value='35.99'>8oz - $<span>35.99</span></p>
                             <p class='package' value='47.99'>16oz - $<span>47.99</span></p>
                             <p class='package' value='57.99'>32oz - $<span>57.99</span></p>
                         </div>
+                        
                         <p>Spend Over $49.99 & Get One Jar At 50% Off! + Free Shipping When You Spend Over $100! 📦</p>
-                        <div class='d-flex justify-content-end'>
+                        <div class='d-flex justify-content-end align-items-baseline'>
+                            <div class='d-flex align-item-baseline m-2'>
+                                <button class='btn btn-light'>-</button>
+                                <span class='p-3 pt-1 pb-1 m-1 bg-light'>1</span>
+                                <button class='btn btn-light'>+</button>
+                            </div>
                             <button class='button bg-white text-black buyNow'>Buy Now</button>
                         </div>
                         <div class="alert"></div>

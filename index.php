@@ -83,7 +83,7 @@
                   <a href='products.php?productName=seamoss-gel' class='button'>Seamoss Gel</a>
                   <a href='products.php?productName=sea-moss-capsules' class='button'>capsules</a>
                   <!--  when you click on it the description is Seamoss/Bladderwrack/Burdock Root Capsules -->
-                  <a href='#' class='button'>Dried</a>
+                  <a href='products.php?productName=sea-moss-dried' class='button'>Dried</a>
                   <!-- When you click on Dried Seamoss there should be 2 options which are Seamoss and Bladderwrack -->
                 </div>
                

@@ -16,9 +16,11 @@ body {
 }
 .measure {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 40px;
 }
 .measure > p {
+    width: 50%;
     border: 1px solid #0000007c;
     text-align: center;
     flex: 1;
@@ -30,6 +32,11 @@ body {
 
 .measure span {
     color: #000000;
+}
+
+.sdfsf  button {
+    padding: 30px;
+    border: none;
 }
 
 .orderForm {
