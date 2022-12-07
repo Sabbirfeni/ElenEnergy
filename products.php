@@ -111,45 +111,6 @@
     ----------------------------->
     <?php require 'footer.php'?>
 
-
-
-       <!-- Whatsapp chat -->
-       <script>
-        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?30580';
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = url;
-        var options = {
-            "enabled":true,
-            "chatButtonSetting":{
-            "backgroundColor":"#4dc247",
-            "ctaText":"",
-            "borderRadius":"25",
-            "marginLeft":"0",
-            "marginBottom":"20",
-            "marginLeft":"20",
-            "position":"left"
-            },
-            "brandSetting":{
-            "brandName":"Elán Energy",
-            "brandSubTitle":"Typically replies within a day",
-            "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
-            "welcomeText":"Hi there!\nHow can I help you?",
-            "messageText":"",
-            "backgroundColor":"#0a5f54",
-            "ctaText":"Start Chat",
-            "borderRadius":"25",
-            "autoShow":false,
-            "phoneNumber":"12075773304"
-            }
-        };
-        s.onload = function() {
-            CreateWhatsappChatWidget(options);
-        };
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-    </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="assets/js/productSelection.js" type="text/javascript" defer></script>

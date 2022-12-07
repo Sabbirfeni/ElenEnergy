@@ -3,18 +3,18 @@ const ALL_PRODUCTS = [
         name: 'seamoss-gel',
         sliderImagesLink: ['seamoss-1.jpeg', 'seamoss-2.jpeg', 'seamoss-3.jpeg'],
         title: 'Sea Moss Gel',
-        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One Scoop'],
+        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One capsule'],
         packages: [
             {
-                quantity: '8oz',
+                quantity: '8oz -',
                 price: '35.99'
             },
             {
-                quantity: '16oz',
+                quantity: '16oz -',
                 price: '47.99'
             },
             {
-                quantity: '32oz',
+                quantity: '32oz -',
                 price: '57.99'
             }
         ],
@@ -22,21 +22,13 @@ const ALL_PRODUCTS = [
     },
     {
         name: 'sea-moss-capsules',
-        sliderImagesLink: ['sea-moss-capsuls-1.jpeg', 'sea-moss-capsuls-2.jpeg', 'sea-moss-capsuls-3.jpeg'],
-        title: 'Sea Moss Capsules',
-        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One Scoop'],
+        sliderImagesLink: ['sea-moss-capsuls-1.jpeg'],
+        title: 'Sea Moss Capsules with Bladderwrack & Burdock',
+        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One capsule'],
         packages: [
             {
-                quantity: '8oz',
-                price: '35.99'
-            },
-            {
-                quantity: '16oz',
-                price: '47.99'
-            },
-            {
-                quantity: '32oz',
-                price: '57.99'
+                quantity: '',
+                price: '34.99'
             }
         ],
         backgroundImageLink: 'sea-moss-capsuls-1.jpeg'
@@ -69,17 +61,15 @@ document.querySelector('.sectionContainer').innerHTML = `
             </div>
             <div class="col-lg-6" style='background-color: gold;'>
                 <div class='p-3 p-md-4'>
-                    <h1>Sea Moss Gel</h1>
+                    <h1>${productResult.title}</h1>
                     <ul class='product_qualities-container'>
                         
                     </ul>
                     
                     <div class='measure'>
-                        <p class='package'>8oz - $<span>35.99</span></p>
-                        <p class='package'>16oz - $<span>47.99</span></p>
-                        <p class='package'>32oz - $<span>57.99</span></p>
+                       
                     </div>
-                    <p>Spend Over $49.99 & Get One Jar At 50% Off! + Free Shipping When You Spend Over $100! 📦</p>
+                    <p>Spend Over $49.99 & Get One Jar At 50% Off! + Free Shipping When You Spend Over $100! ðŸ“¦</p>
                     <div class='d-flex justify-content-end'>
                         <button class='button bg-white text-black buyNow'>Buy Now</button>
                     </div>
@@ -106,75 +96,10 @@ productResult.product_qualities.forEach((quality) => {
     document.querySelector('.product_qualities-container').insertAdjacentHTML('beforeend', html);
 })
 
-
-{/* <section class='productDetails' style='background-image: url("assets/images/seamoss-3.jpeg")'>
-<div class="container pb-3 pb-md-5">
-    <div class="row p-3 p-md-0">
-        <div class="col-lg-6 p-0">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="assets/images/seamoss-1.jpeg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="assets/images/seamoss-2.jpeg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="assets/images/seamoss-3.jpeg" class="d-block" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <div class="col-lg-6" style='background-color: gold;'>
-            <div class='p-3 p-md-4'>
-                <h1>Sea Moss Gel</h1>
-                <ul>
-                    <li><p>100% Natural & Organic</p></li>
-                    <li><p>Gut Health & Digestion </p></li>
-                    <li><p>Support Thyroid & Boost Your Energy</p></li>
-                    <li><p>24 Hour Customer Support</p></li>
-                    <li><p>92 Minerals In One Scoop</p></li>
-                </ul>
-                
-                <div class='measure'>
-                    <p class='package' value='35.99'>8oz - $<span>35.99</span></p>
-                    <p class='package' value='47.99'>16oz - $<span>47.99</span></p>
-                    <p class='package' value='57.99'>32oz - $<span>57.99</span></p>
-                </div>
-                <p>Spend Over $49.99 & Get One Jar At 50% Off! + Free Shipping When You Spend Over $100! 📦</p>
-                <div class='d-flex justify-content-end'>
-                    <button class='button bg-white text-black buyNow'>Buy Now</button>
-                </div>
-                <div class="alert"></div>
-                
-                
-            </div>
-        </div>
-    </div>
-</div>
-</section> */}
-
-
-
-    // <div class="carousel-item active">
-    // <img src="assets/images/seamoss-1.jpeg" class="d-block" alt="...">
-    // </div>
-    // <div class="carousel-item">
-    // <img src="assets/images/seamoss-2.jpeg" class="d-block" alt="...">
-    // </div>
-    // <div class="carousel-item">
-    // <img src="assets/images/seamoss-3.jpeg" class="d-block" alt="...">
-    // </div>
-
-
+productResult.packages.forEach((value) => {
+    let html = `<p class='package'>${value.quantity}  $<span>${value.price}</span></p>`
+    document.querySelector('.measure').insertAdjacentHTML('beforeend', html);
+})
 
 
 
