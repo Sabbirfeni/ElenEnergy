@@ -23,13 +23,13 @@ const ALL_PRODUCTS = [
     },
     {
         name: 'sea-moss-capsules',
-        sliderImagesLink: ['sea-moss-capsuls-1.jpeg'],
+        sliderImagesLink: ['sea-moss-capsuls-1.jpeg', 'aboutUs.jpeg'],
         title: 'Sea Moss Capsules with Bladderwrack & Burdock',
-        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One capsule'],
+        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
         packages: [
             {
                 quantity: '',
-                price: '34.99'
+                price: '30'
             }
         ],
         offer: '',
@@ -39,7 +39,7 @@ const ALL_PRODUCTS = [
         name: 'sea-moss-dried',
         sliderImagesLink: ['sea-moss-dried-1.jpeg','sea-moss-dried-2.jpeg','sea-moss-dried-3.jpeg'],
         title: 'Sea Moss Dried',
-        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One capsule'],
+        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
         packages: [
             {
                 quantity: 'Purple Irish Sea Moss (Chondrus), Whole leaf, Dried - ',
@@ -60,6 +60,20 @@ const ALL_PRODUCTS = [
         ],
         offer: '',
         backgroundImageLink: 'sea-moss-dried-3.jpeg'
+    },
+    {
+        name: 'mushroom-capsules',
+        sliderImagesLink: ['mushroom-capsules-2.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
+        title: 'RED REISHI Mushroom Capsules',
+        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
+        packages: [
+            {
+                quantity: '',
+                price: '12.76'
+            }
+        ],
+        offer: '',
+        backgroundImageLink: 'mushroom-capsules-1.jpeg'
     },
 ]
 
@@ -91,13 +105,13 @@ document.querySelector('.sectionContainer').innerHTML = `
                     <div class='measure'></div>
                     <p>${productResult.offer}</p>
                     <div class='d-flex justify-content-end align-items-baseline'>
-                            <div class='d-flex align-item-baseline m-2'>
-                                <button class='btn btn-light decrement__btn'>-</button>
-                                <span class='p-3 pt-1 pb-1 m-1 bg-light quantity__number'>1</span>
-                                <button class='btn btn-light increment__btn'>+</button>
-                            </div>
-                            <button class='button bg-white text-black buyNow'>Buy Now</button>
+                        <div class='d-flex align-item-baseline m-2'>
+                            <button class='btn btn-light decrement__btn'>-</button>
+                            <span class='p-3 pt-1 pb-1 m-1 bg-light quantity__number'>1</span>
+                            <button class='btn btn-light increment__btn'>+</button>
                         </div>
+                        <button class='button bg-white text-black buyNow'>Buy Now</button>
+                    </div>
                     <div class="alert"></div>
                     
                 </div>

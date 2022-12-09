@@ -96,7 +96,7 @@
               <div class="product-text">
                 <h4>Mushroom Products</h4>
                 <div class='buttonContainer'>
-                  <a href='#' class='button'>Capsules</a>
+                  <a href='products.php?productName=mushroom-capsules' class='button'>Capsules</a>
                   <a href='#' class='button'>Teabags</a>
                   <a href='#' class='button'>Dried</a>
                   <!-- When you click on Dried mushrooms there should be 3 options which are Chaga, Turkey Tail, and Reishi -->
