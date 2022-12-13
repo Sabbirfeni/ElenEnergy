@@ -65,7 +65,12 @@ const ALL_PRODUCTS = [
         name: 'mushroom-capsules',
         sliderImagesLink: ['mushroom-capsules-2.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
         title: 'RED REISHI Mushroom Capsules',
-        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
+        product_qualities: ["Contains Lion's Mane, Reishi and Chaga", 
+        'Each capsule contains extracts that are 10x more potent than powders.',
+        '10 supplements in a single capsule.',
+        'Supports focus and cognitive function',
+        'Supports a healthy memory',
+        '100% Natural & Organic', 'Gut Health & Digestion'],
         packages: [
             {
                 quantity: '',
@@ -75,6 +80,20 @@ const ALL_PRODUCTS = [
         offer: '',
         backgroundImageLink: 'mushroom-capsules-1.jpeg'
     },
+    // {
+    //     name: 'mushroom-teabags',
+    //     sliderImagesLink: ['mushroom-capsules-2.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
+    //     title: 'RED REISHI Mushroom Capsules',
+    //     product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion'],
+    //     packages: [
+    //         {
+    //             quantity: '',
+    //             price: '12.76'
+    //         }
+    //     ],
+    //     offer: '',
+    //     backgroundImageLink: 'mushroom-capsules-1.jpeg'
+    // }
 ]
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -135,7 +154,7 @@ productResult.product_qualities.forEach((quality) => {
 })
 
 productResult.packages.forEach((value) => {
-    let html = `<p class='package'>${value.quantity}  $<span>${value.price}</span></p>`
+    let html = `<p class='package'>${value.quantity} <span class='fw-bold'>$</span><span class='fw-bold'>${value.price}</span></p>`
     document.querySelector('.measure').insertAdjacentHTML('beforeend', html);
 })
 

@@ -30,14 +30,15 @@ body {
     cursor: pointer;
 }
 
+
 .measure span {
     color: #000000;
 }
 
-.sdfsf  button {
+/* .sdfsf  button {
     padding: 30px;
     border: none;
-}
+} */
 
 .orderForm {
     width: 100%;
