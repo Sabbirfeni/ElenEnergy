@@ -29,7 +29,7 @@ const ALL_PRODUCTS = [
         packages: [
             {
                 quantity: '',
-                price: '30'
+                price: '29.99'
             }
         ],
         offer: '',
@@ -37,25 +37,25 @@ const ALL_PRODUCTS = [
     },
     {
         name: 'sea-moss-dried',
-        sliderImagesLink: ['sea-moss-dried-1.jpeg','sea-moss-dried-2.jpeg','sea-moss-dried-3.jpeg'],
+        sliderImagesLink: ['sea-moss-dried-2.jpeg','sea-moss-dried-3.jpeg'],
         title: 'Sea Moss Dried',
-        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
+        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin'],
         packages: [
             {
                 quantity: 'Purple Irish Sea Moss (Chondrus), Whole leaf, Dried - ',
-                price: '45.00'
+                price: '35.00'
             },
             {
                 quantity: 'Purple Irish Sea Moss (Chondrus), Powder, Dried - ',
-                price: '40.00'
+                price: '30.00'
             },
             {
                 quantity: 'Bladder Wrack (Fucus), Whole leaf, Dried - ',
-                price: '35.00'
+                price: '25.00'
             },
             {
                 quantity: 'Bladder Wrack (Fucus), Powder, Dried - ',
-                price: '35.00'
+                price: '25.00'
             }
         ],
         offer: '',
@@ -63,7 +63,7 @@ const ALL_PRODUCTS = [
     },
     {
         name: 'mushroom-capsules',
-        sliderImagesLink: ['mushroom-capsules-2.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
+        sliderImagesLink: ['all-in-one mashroom.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
         title: 'RED REISHI Mushroom Capsules',
         product_qualities: ["Contains Lion's Mane, Reishi and Chaga", 
         'Each capsule contains extracts that are 10x more potent than powders.',
@@ -74,7 +74,7 @@ const ALL_PRODUCTS = [
         packages: [
             {
                 quantity: '',
-                price: '12.76'
+                price: '29.99'
             }
         ],
         offer: '',

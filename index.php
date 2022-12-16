@@ -78,9 +78,9 @@
             <div class="product-container">
               <img src="assets/images/seamoss-1.jpeg" alt="">
               <div class="product-text">
-                <h4>Seamoss Products</h4>
+                <h4>Sea Moss Products</h4>
                 <div class='buttonContainer'>
-                  <a href='products.php?productName=seamoss-gel' class='button'>Seamoss Gel</a>
+                  <a href='products.php?productName=seamoss-gel' class='button'>Sea Moss Gel</a>
                   <a href='products.php?productName=sea-moss-capsules' class='button'>capsules</a>
                   <!--  when you click on it the description is Seamoss/Bladderwrack/Burdock Root Capsules -->
                   <a href='products.php?productName=sea-moss-dried' class='button'>Dried</a>
