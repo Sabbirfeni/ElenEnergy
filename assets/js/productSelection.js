@@ -64,10 +64,8 @@ const ALL_PRODUCTS = [
     {
         name: 'mushroom-capsules',
         sliderImagesLink: ['all-in-one mashroom.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
-        title: 'RED REISHI Mushroom Capsules',
-        product_qualities: ["Contains Lion's Mane, Reishi and Chaga", 
-        'Each capsule contains extracts that are 10x more potent than powders.',
-        '10 supplements in a single capsule.',
+        title: 'Mushroom Capsules',
+        product_qualities: ["Contains Lion's Mane, Turkey Tail, Reishi and Chaga", 
         'Supports focus and cognitive function',
         'Supports a healthy memory',
         '100% Natural & Organic', 'Gut Health & Digestion'],
