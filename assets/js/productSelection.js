@@ -12,16 +12,16 @@ const ALL_PRODUCTS = [
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One capsule'],
         packages: [
             {
-                quantity: '8oz -',
-                price: '35.99'
+                price: '35.99',
+                quantity: '(8oz)'
             },
             {
-                quantity: '16oz -',
-                price: '47.99'
+                price: '47.99',
+                quantity: '(16oz)'
             },
             {
-                quantity: '32oz -',
-                price: '57.99'
+                price: '57.99',
+                quantity: '(32oz)'
             }
         ],
         offer: 'Spend Over $49.99 & Get One Jar At 50% Off! + Free Shipping When You Spend Over $100!',
@@ -40,8 +40,8 @@ const ALL_PRODUCTS = [
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
         packages: [
             {
-                quantity: '',
-                price: '29.99'
+                price: '29.99',
+                quantity: ''
             }
         ],
         offer: '',
@@ -95,17 +95,17 @@ const ALL_PRODUCTS = [
         '100% Natural & Organic', 'Gut Health & Digestion'],
         packages: [
             {
-                quantity: '',
-                price: '29.99'
+                price: '29.99',
+                quantity: ''
             }
         ],
         offer: '',
         backgroundImageLink: 'mushroom-capsules-1.jpeg'
     },
     {
-        name: 'tarot-cards',
+        name: 'terot-cards',
         sliderImagesLink: ['terotDrek.jpeg'],
-        title: 'Tarot cards',
+        title: 'Terot cards',
         description: [
             {
                 title: 'What is the terot?',
@@ -136,11 +136,40 @@ const ALL_PRODUCTS = [
         packages: [
             {
                 quantity: '',
-                price: '12.76'
+                price: '20.00'
             }
         ],
         offer: '',
         backgroundImageLink: 'terotDrek-bg.jpeg'
+    },
+    {
+        name: 'cbd',
+        sliderImagesLink: ['cbd-slider-1.jpeg', 'cbd-slider-2.jpeg', 'cbd-slider-3.jpeg'],
+        title: 'CBD',
+        description: [
+            {
+                title: 'Why our CBD Concentrate is different:',
+                details: `Each bottle comes from a small batch in order to keep the product fresh.
+                Nothing is automated or made without human hands touching and making it personal.
+                We add a small quartz crystal to each bottle. This activates the cell wall of the plant and fills it with Light. Gem Elixir!
+                Each small batch has Reiki performed on it asking for the highest good for each one that consumes the product. You can claim that before you take the product and I hope you do!`
+            },
+            {
+                title: 'All bottles are gridded for the highest good, and if you notice, we use cobalt blue bottles:',
+                details: `Changes the molecular structure of the water.
+                        Raises the water’s vibrational frequency.
+                        This raises your vibrational frequency, too!`
+            }
+        ],
+        product_qualities: [],
+        packages: [
+            {
+                price: '35.00',
+                quantity: '(350 mg)'
+            }
+        ],
+        offer: '',
+        backgroundImageLink: 'cbd-bg.jpeg'
     }
 ]
 
@@ -174,7 +203,7 @@ document.querySelector('.sectionContainer').innerHTML = `
                     <ul class='product_qualities-container'></ul>
                     <div class='measure'></div>
                     <p>${productResult.offer}</p>
-                    <div class='d-flex justify-content-end align-items-baseline'>
+                    <div class='d-flex justify-content-end align-items-baseline buy__button-container'>
                         <div class='d-flex align-item-baseline m-2'>
                             <button class='btn btn-light decrement__btn'>-</button>
                             <span class='p-3 pt-1 pb-1 m-1 bg-light quantity__number'>1</span>
@@ -182,7 +211,7 @@ document.querySelector('.sectionContainer').innerHTML = `
                         </div>
                         <button class='button bg-white text-black buyNow'>Buy Now</button>
                     </div>
-                    <div class="alert"></div>
+                   
                     
                 </div>
             </div>
@@ -219,7 +248,7 @@ productResult.product_qualities.forEach((quality) => {
 })
 
 productResult.packages.forEach((value) => {
-    let html = `<p class='package'>${value.quantity} <span class='fw-bold'>$</span><span class='fw-bold'>${value.price}</span></p>`
+    let html = `<p class='package'><span class='fw-bold'>$</span><span class='fw-bold'>${value.price} </span>${value.quantity} </p>`
     document.querySelector('.measure').insertAdjacentHTML('beforeend', html);
 })
 
@@ -233,7 +262,6 @@ const allPackage = document.querySelectorAll('.package');
 const buyBtn = document.querySelector('.buyNow');
 let selectedPackagePrice = 0;
 let isClicked = false;
-let alertMessage = document.querySelector('.alert');
 let orderForm = document.querySelector('.orderForm');
 
 allPackage.forEach((value) => {
@@ -246,14 +274,14 @@ allPackage.forEach((value) => {
     buyBtn.addEventListener('click', () => {
 
         if(isClicked) {
-            alertMessage.innerHTML = '';
+            document.querySelector('.alert').style.display = 'none';
             orderForm.classList.add('active');
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
             document.body.style.overflowY = 'hidden';
             // document.querySelector('.form').innerHTML = selectedPackagePrice;
         } else {
-            alertMessage.innerHTML = 'Please select a package first!';
+            document.querySelector('.buy__button-container').insertAdjacentHTML('afterend',  `<div class="alert">Please select a package first!</div>`);
         }
 
        
