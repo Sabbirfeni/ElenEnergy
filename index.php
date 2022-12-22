@@ -104,24 +104,14 @@
               </div>
             </div>
           </div>
-          <div href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
-            <div class="product-container">
-              <img src="assets/images/crystals.jpeg" alt="">
-              <div class="product-text">
-                <h4>Sentient Plasma Crystals</h4>
-                <div class='buttonContainer'>
-                  <a href='#' class='button'>Buy Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
+          
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
               <img src="assets/images/terotDrek.jpeg" alt="">
               <div class="product-text">
                 <h4>Tarot Decks</h4>
                 <div class='buttonContainer'>
-                  <a href='#' class='button'>Buy Now</a>
+                  <a href='products.php?productName=tarot-cards' class='button'>Buy Now</a>
                 </div>
               </div>
             </div>
@@ -149,7 +139,17 @@
               </div>
             </div>
           </div>
-
+          <div href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
+            <div class="product-container">
+              <img src="assets/images/crystals.jpeg" alt="">
+              <div class="product-text">
+                <h4>Sentient Plasma Crystals</h4>
+                <div class='buttonContainer'>
+                  <a href='#' class='button'>Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- <a href='#' class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" data-aos="fade-up" data-aos-duration="800">
             <div class="product-container">
               <img src="assets/images/bookSeries.jpeg" alt="">

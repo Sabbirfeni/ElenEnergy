@@ -3,6 +3,12 @@ const ALL_PRODUCTS = [
         name: 'seamoss-gel',
         sliderImagesLink: ['seamoss-1.jpeg', 'seamoss-2.jpeg', 'seamoss-3.jpeg'],
         title: 'Sea Moss Gel',
+        description: [
+            {
+                title: '',
+                details: ''
+            }
+        ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One capsule'],
         packages: [
             {
@@ -25,6 +31,12 @@ const ALL_PRODUCTS = [
         name: 'sea-moss-capsules',
         sliderImagesLink: ['sea-moss-capsuls-1.jpeg', 'aboutUs.jpeg'],
         title: 'Sea Moss Capsules with Bladderwrack & Burdock',
+        description: [
+            {
+                title: '',
+                details: ''
+            }
+        ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
         packages: [
             {
@@ -39,6 +51,12 @@ const ALL_PRODUCTS = [
         name: 'sea-moss-dried',
         sliderImagesLink: ['sea-moss-dried-2.jpeg','sea-moss-dried-3.jpeg'],
         title: 'Sea Moss Dried',
+        description: [
+            {
+                title: '',
+                details: ''
+            }
+        ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin'],
         packages: [
             {
@@ -65,6 +83,12 @@ const ALL_PRODUCTS = [
         name: 'mushroom-capsules',
         sliderImagesLink: ['all-in-one mashroom.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
         title: 'Mushroom Capsules',
+        description: [
+            {
+                title: '',
+                details: ''
+            }
+        ],
         product_qualities: ["Contains Lion's Mane, Turkey Tail, Reishi and Chaga", 
         'Supports focus and cognitive function',
         'Supports a healthy memory',
@@ -78,20 +102,46 @@ const ALL_PRODUCTS = [
         offer: '',
         backgroundImageLink: 'mushroom-capsules-1.jpeg'
     },
-    // {
-    //     name: 'mushroom-teabags',
-    //     sliderImagesLink: ['mushroom-capsules-2.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
-    //     title: 'RED REISHI Mushroom Capsules',
-    //     product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion'],
-    //     packages: [
-    //         {
-    //             quantity: '',
-    //             price: '12.76'
-    //         }
-    //     ],
-    //     offer: '',
-    //     backgroundImageLink: 'mushroom-capsules-1.jpeg'
-    // }
+    {
+        name: 'tarot-cards',
+        sliderImagesLink: ['terotDrek.jpeg'],
+        title: 'Tarot cards',
+        description: [
+            {
+                title: 'What is the terot?',
+                details: `The terot is a set of archetypes of the mind unique 
+                to this sub-Logos. This sub-Logos is our solar system.
+                Another sub-Logos is our galaxy. Beyond that is the Logos. the universal creator.
+                The 22 arcana are as follows: the first 7 are of mind, the middle 7 are of body, the last
+                7 are of spirit. The last card, 22, is the choice. Each set of 7 has each card cor-responding to one the following: matrix (of the 
+                mind, for example), potentiator, catalyst, experience, significator, transformation and way. This order repeats itself 3 times until the 22nd card.
+                So cars 1, 8 and 15 are the matrix of the mind, matrix of the body, and matrix of the spirit respectively.`
+            },
+            {
+                title: 'Not a tool for divination',
+                details: '"[The archetypes] are tools for the further knowledge of the self by the self for the purpose of entering a more profoundly, acutely realized present moment."'
+            },
+            {
+                title: 'Not a plan for spiritual evolution',
+                details: `"I am Ra. In the archetypical mind one has the resource of not specifically a plan for evolution but rather a blueprint or architecture of the nature of evolution. This may seem to be a small
+                distinction, but it has significance in perceiving more clearly the use of this resource of the deep mind."`
+            },
+            {
+                title: 'Not a set of absolute experiences',
+                details: `"In no way whatsoever should we, as humble messengers of the one infinite Creator, wish to place before the consideration of any mind/body/spirit complex which seeks its evolution the palest tint of
+                the idea that these images are anything but a resource for working in the area of the development of the faith and the will."`
+            }
+        ],
+        product_qualities: [],
+        packages: [
+            {
+                quantity: '',
+                price: '12.76'
+            }
+        ],
+        offer: '',
+        backgroundImageLink: 'terotDrek-bg.jpeg'
+    }
 ]
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -105,11 +155,11 @@ document.querySelector('.sectionContainer').innerHTML = `
             <div class="col-lg-6 p-0">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner"></div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <button class="carousel-control-prev slider-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <button class="carousel-control-next slider-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -118,6 +168,9 @@ document.querySelector('.sectionContainer').innerHTML = `
             <div class="col-lg-6" style='background-color: gold;'>
                 <div class='p-3 p-md-4'>
                     <h1>${productResult.title}</h1>
+                    <div class='description_container'>
+                        
+                    </div>
                     <ul class='product_qualities-container'></ul>
                     <div class='measure'></div>
                     <p>${productResult.offer}</p>
@@ -145,6 +198,20 @@ productResult.sliderImagesLink.forEach((link) => {
     document.querySelector('.carousel-inner').insertAdjacentHTML('beforeend', html);
 })
 document.querySelector('.carousel-item').classList.add('active')
+
+const sliderControl = document.querySelectorAll('.slider-control');
+
+if(productResult.sliderImagesLink.length == 1) {
+    sliderControl.forEach((value) => {
+        value.style.display = 'none';
+    })
+    
+}
+productResult.description.forEach((singleDescription) => {
+    let html = `<h4 class='fw-bold'>${singleDescription.title}</h4>
+                <p>${singleDescription.details}</p>`
+    document.querySelector('.description_container').insertAdjacentHTML('beforeend', html);
+})
 
 productResult.product_qualities.forEach((quality) => {
     let html = `<li><p>${quality}</p></li>`
