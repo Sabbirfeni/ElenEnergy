@@ -169,7 +169,7 @@ const ALL_PRODUCTS = [
             }
         ],
         offer: '',
-        backgroundImageLink: 'cbd-bg.jpeg'
+        backgroundImageLink: 'cbd-bg.png'
     }
 ]
 
