@@ -6,7 +6,7 @@ const ALL_PRODUCTS = [
         description: [
             {
                 title: '',
-                details: ''
+                details: 'Manafest’s Original Gold Sea Moss Gel contains 92 essential minerals our bodies use to experience an uplifted mood, more mental clarity, lower stress levels and so much more. With zero ocean taste this gel is a great addition to any smoothie, tea, shake or eaten right out of the jar. Manafest’s Original Gold Sea Moss Gel is sustainably wildcrafted from St. Lucia and is made in a commercial grade facility in Oceanside, California. '
             }
         ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One capsule'],
@@ -34,7 +34,7 @@ const ALL_PRODUCTS = [
         description: [
             {
                 title: '',
-                details: ''
+                details: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
             }
         ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
@@ -54,7 +54,7 @@ const ALL_PRODUCTS = [
         description: [
             {
                 title: '',
-                details: ''
+                details: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
             }
         ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin'],
@@ -86,7 +86,7 @@ const ALL_PRODUCTS = [
         description: [
             {
                 title: '',
-                details: ''
+                details: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
             }
         ],
         product_qualities: ["Contains Lion's Mane, Turkey Tail, Reishi and Chaga", 
@@ -105,11 +105,11 @@ const ALL_PRODUCTS = [
     {
         name: 'terot-cards',
         sliderImagesLink: ['terotDrek.jpeg'],
-        title: 'Terot cards',
+        title: 'Tarot cards',
         description: [
             {
-                title: 'What is the terot?',
-                details: `The terot is a set of archetypes of the mind unique 
+                title: 'What is the Tarot?',
+                details: `The Tarot is a set of archetypes of the mind unique 
                 to this sub-Logos. This sub-Logos is our solar system.
                 Another sub-Logos is our galaxy. Beyond that is the Logos. the universal creator.
                 The 22 arcana are as follows: the first 7 are of mind, the middle 7 are of body, the last
