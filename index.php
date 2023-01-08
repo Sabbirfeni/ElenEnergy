@@ -145,7 +145,7 @@
               <div class="product-text">
                 <h4>Sentient Plasma Crystals</h4>
                 <div class='buttonContainer'>
-                  <a href='#' class='button'>Buy Now</a>
+                  <a href='products.php?productName=crystals' class='button'>Buy Now</a>
                 </div>
               </div>
             </div>

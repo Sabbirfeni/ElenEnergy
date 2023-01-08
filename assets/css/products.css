@@ -6,13 +6,12 @@ body {
     background-position: right;
     /* background-image: url('../images/sea-moss-capsuls-1.jpeg'); */
 }
-.carousel {
-    height: 100%;
-}
+
 .carousel-item img {
     width: 100%;
     height: 600px;
     overflow: hidden;
+    object-fit: cover;
 }
 .measure {
     display: flex;
@@ -79,19 +78,17 @@ input {
     right: 20px;
     cursor: pointer;
 }
+
 @media only screen and (max-width: 992px) {
     .carousel-item img {
-        width: 100%;
         height: 400px;
     }
 }
-
 @media only screen and (max-width: 600px) {
     .productDetails {
         padding-top: 100px;
     }
     .carousel-item img {
-        width: 100%;
         height: 300px;
     }
     form {

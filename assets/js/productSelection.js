@@ -37,7 +37,7 @@ const ALL_PRODUCTS = [
                 details: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
             }
         ],
-        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule'],
+        product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule', '60 capsules'],
         packages: [
             {
                 price: '29.99',
@@ -92,7 +92,8 @@ const ALL_PRODUCTS = [
         product_qualities: ["Contains Lion's Mane, Turkey Tail, Reishi and Chaga", 
         'Supports focus and cognitive function',
         'Supports a healthy memory',
-        '100% Natural & Organic', 'Gut Health & Digestion'],
+        '100% Natural & Organic', 'Gut Health & Digestion',
+        '60 capsules'],
         packages: [
             {
                 price: '29.99',
@@ -170,6 +171,32 @@ const ALL_PRODUCTS = [
         ],
         offer: '',
         backgroundImageLink: 'cbd-bg.png'
+    },
+    {
+        name: 'crystals',
+        sliderImagesLink: ['crystals.jpeg', 'crystals-2.jpeg', 'crystals-3.jpeg'],
+        title: 'Crystals',
+        description: [
+            {
+                title: 'HIGH COLUMBIAN...GEM QUARTZ...SEMI-PRECIOUS...JEWELRY-GEM GRADE:',
+                details: `Sentient PLASMA Crystals™ are somewhat of a mystery.  It is claimed that they are 12th Dimensional vibrating in energy with an SiO2 test rate at 97% pure crystal, according to Lab Tests. 
+
+                They are the highest rated pure crystal known to man, compared to Arkansas Crystal's, which rate at 76% pure crystal.
+                
+                The reason for the "mystery" is because... according to those that have purchased one of these ...once purchased as a personal piece...the crystal DOES become individual, and works with the owner exclusively. All gems and minerals are "sentient" but perhaps these, in particular, chose to be named "sentient" to open up the mind to who they are.  The intelligence of the crystal allows for the individual to seek higher learning...according to the individual's needs, and this is apparent immediately to the owner. We have more to learn from this fantastic crystal, and I suspect it has much more to teach us.
+                
+                Sentient's are one of those crystals you want to have around.`
+            }
+        ],
+        product_qualities: [],
+        packages: [
+            {
+                price: '25.00',
+                quantity: ''
+            }
+        ],
+        offer: '',
+        backgroundImageLink: 'crystals.jpeg'
     }
 ]
 
@@ -182,7 +209,7 @@ document.querySelector('.sectionContainer').innerHTML = `
     <div class="container pb-3 pb-md-5">
         <div class="row p-3 p-md-0">
             <div class="col-lg-6 p-0">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide d-flex align-items-center justify-content-center" style='min-height: 300px; max-height: 600px' data-bs-ride="carousel">
                     <div class="carousel-inner"></div>
                     <button class="carousel-control-prev slider-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -252,7 +279,7 @@ productResult.packages.forEach((value) => {
     document.querySelector('.measure').insertAdjacentHTML('beforeend', html);
 })
 
-
+// document.styleSheets[0].insertRule("@media only screen and (max-width : 992px) { .slide { height: 800px } }","");
 
 
 
