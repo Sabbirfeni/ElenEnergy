@@ -6,7 +6,7 @@ const ALL_PRODUCTS = [
         description: [
             {
                 title: '',
-                details: 'Manafest’s Original Gold Sea Moss Gel contains 92 essential minerals our bodies use to experience an uplifted mood, more mental clarity, lower stress levels and so much more. With zero ocean taste this gel is a great addition to any smoothie, tea, shake or eaten right out of the jar. Manafest’s Original Gold Sea Moss Gel is sustainably wildcrafted from St. Lucia and is made in a commercial grade facility in Oceanside, California. '
+                details: "Sea Moss Gel contains 92 essential minerals our bodies use to experience an uplifted mood, more mental clarity, lower stress levels and so much more. This gel is a great addition to any smoothie, tea, shake or eaten right out of the jar. Elán Energy's Sea Moss Gel is wild harvested from the most pristine waters in the gulf of Maine from St. Lucia and is made in a commercial grade facility in Oceanside, California. "
             }
         ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', '24 Hour Customer Support', '92 Minerals In One capsule'],
@@ -18,11 +18,11 @@ const ALL_PRODUCTS = [
             {
                 price: '47.99',
                 quantity: '(16oz)'
-            },
-            {
-                price: '57.99',
-                quantity: '(32oz)'
             }
+            // {
+            //     price: '57.99',
+            //     quantity: '(32oz)'
+            // }
         ],
         offer: 'Spend Over $49.99 & Get One Jar At 50% Off! + Free Shipping When You Spend Over $100!',
         backgroundImageLink: 'seamoss-3.jpeg'
@@ -34,7 +34,9 @@ const ALL_PRODUCTS = [
         description: [
             {
                 title: '',
-                details: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                details: `Bladderwrack - has been used for the stimulation of the thyroid gland as a treatment for obesity and cellulite. The high iodine content of the herb stimulates thyroid function which boosts metabolism. It has a reputation in the relief of rheumatism and rheumatoid arthritis and may be used both internally and as an external application for inflamed joints*
+
+                Burdock - is a wonderful herb known for its numerous health benefits which include, aiding in digestion, detoxifying the liver, and balancing hormones. It is also good for improving skin quality, reducing inflammation.`
             }
         ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin', '92 Minerals In One capsule', '60 capsules'],
@@ -54,7 +56,7 @@ const ALL_PRODUCTS = [
         description: [
             {
                 title: '',
-                details: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                details: ''
             }
         ],
         product_qualities: ['100% Natural & Organic', 'Gut Health & Digestion', 'Support Thyroid & Boost Your Energy', 'Support cell turnover for youthful looking skin'],
@@ -81,7 +83,7 @@ const ALL_PRODUCTS = [
     },
     {
         name: 'mushroom-capsules',
-        sliderImagesLink: ['all-in-one mashroom.jpeg', 'mushroom-capsules-1.jpeg', 'mushroom-capsules-3.jpeg'],
+        sliderImagesLink: ['mushroom-capsules-1.jpeg', 'mushroom-image-343534.jpeg', 'mushroom-image-34353.jpeg', 'mushroom-image-3435.webp',],
         title: 'Mushroom Capsules',
         description: [
             {
@@ -174,7 +176,7 @@ const ALL_PRODUCTS = [
     },
     {
         name: 'crystals',
-        sliderImagesLink: ['crystals.jpeg', 'crystals-2.jpeg', 'crystals-3.jpeg'],
+        sliderImagesLink: ['single-crytals-334352424.jpeg', 'single-crytal-343.jpeg', 'single-crytals-33435.jpeg', 'single-crytals-334355353.jpeg'],
         title: 'Crystals',
         description: [
             {
